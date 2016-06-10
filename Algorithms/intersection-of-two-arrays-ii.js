@@ -26,7 +26,7 @@ var intersect = function(nums1, nums2) {
     let ans = [];
     for (let i in hash1) {
         if (hash2[i]) {
-            ans.concat(new Array(Math.min(hash1[i], hash2[i])).fill(+i));
+            ans = ans.concat(new Array(Math.min(hash1[i], hash2[i])).fill(+i));
         }
     }
     return ans;
