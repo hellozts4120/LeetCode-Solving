@@ -11,7 +11,7 @@ var wordPattern = function(pattern, str) {
 
     let a2b = {}, b2a = {}, len = arr.length;
     for (let i = 0; i < len; i++) {
-        let a = pattern[i], b = str[i];
+        let a = pattern[i], b = arr[i];
         
         if (!a2b[a]) {
             a2b[a] = b;
